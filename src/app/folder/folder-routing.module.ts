@@ -5,8 +5,24 @@ import { FolderPage } from './folder.page';
 
 const routes: Routes = [
   {
+    path: 'folder',
+    component: FolderPage,
+    children: [
+      {
+        path: 'foro',
+        loadChildren: () => import('../foro/foro.module').then( m => m.ForoPageModule )
+      },
+      {
+        path: '',
+        redirectTo: '/folder/Foro',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
     path: '',
-    component: FolderPage
+    redirectTo: '/folder/Foro',
+    pathMatch: 'full'
   }
 ];
 
