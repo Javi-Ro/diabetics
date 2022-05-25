@@ -8,14 +8,16 @@ import { ForoPageRoutingModule } from './foro-routing.module';
 
 import { ForoPage } from './foro.page';
 import { PublicationCardComponent } from '../components/publication-card/publication-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ForoPageRoutingModule
+    ForoPageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [ForoPage, PublicationCardComponent]
+  declarations: [ForoPage, PublicationCardComponent, PublicationCardComponent]
 })
 export class ForoPageModule {}

@@ -1,20 +1,19 @@
 <ion-card class="publication-container">
-  <img [src]="'assets/images/' + image" alt="Publication image">
+  <img *ngIf="!isComment" [src]="'assets/images/' + info.image" alt="Publication image">
   <ion-card-header>
-    <ion-card-subtitle>{{ username }}</ion-card-subtitle>
-    <ion-card-title>{{ title }}</ion-card-title>
+    <ion-card-subtitle>{{ info.username }}</ion-card-subtitle>
+    <ion-card-title>{{ info.title }}</ion-card-title>
   </ion-card-header>
   <ion-card-content>
     <div class="text">
-      {{ text }}
+      {{ info.text }}
     </div>
-    <div class="options">
-      <ion-text class="options-comments">{{ comments }} personas han comentado</ion-text>
-      <a href="/caca" class="options-link">
+    <div class="options" *ngIf="!isComment && !isUnique">
+      <ion-text class="options-comments">{{ info.comments }} personas han comentado</ion-text>
+      <a [routerLink]="['/folder/Foro/',info.id]" class="options-link">
         <ion-text> Ver hilo </ion-text> 
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </a>
-      
     </div>
   </ion-card-content>
 </ion-card>

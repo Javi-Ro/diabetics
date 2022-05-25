@@ -7,11 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PublicationCardComponent implements OnInit {
 
-  @Input() username: String;
-  @Input() title: String;
-  @Input() text: String;
-  @Input() image: String;
-  @Input() comments: String;
+  @Input() info: any;
+  @Input() isComment: boolean = false;
+  @Input() isUnique: boolean = false;
   
 
   constructor() { }

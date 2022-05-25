@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "username": "@mariaa_",
+      "title": "Haz deporte",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "image": "ejemplo.jpg",
+      "comments": 5
+    },
+    {
+      "id": 1,
+      "username": "@mariaa_",
+      "title": "Haz deporte",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "image": "azucar.png",
+      "comments": 100
+    },
+    {
+      "id": 2,
+      "username": "@mariaa_",
+      "title": "Haz deporte",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "image": "deporte.png",
+      "comments": 500123
+    },
+    {
+      "id": 3,
+      "username": "@mariaa_",
+      "title": "Haz deporte",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "image": "dieta.jpg",
+      "comments": 1500000
+    }
+  ]
+}

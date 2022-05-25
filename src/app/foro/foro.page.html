@@ -11,7 +11,7 @@
 
   <div id="container" class="main-container-posts">
     <div class="container-posts" *ngFor="let post of posts">
-      <app-publication-card [username]="post.username" [text]="post.text" [title]="post.title" [image]="post.image" [comments]="post.comments"></app-publication-card>
+      <app-publication-card [info]="post"></app-publication-card>
     </div>
 
   </div>
