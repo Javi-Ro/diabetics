@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ForoPageRoutingModule } from './foro-routing.module';
 
 import { ForoPage } from './foro.page';
+import { PublicationCardComponent } from '../components/publication-card/publication-card.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { ForoPage } from './foro.page';
     IonicModule,
     ForoPageRoutingModule
   ],
-  declarations: [ForoPage]
+  declarations: [ForoPage, PublicationCardComponent]
 })
 export class ForoPageModule {}

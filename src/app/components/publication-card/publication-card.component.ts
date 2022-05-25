@@ -11,6 +11,8 @@ export class PublicationCardComponent implements OnInit {
   @Input() title: String;
   @Input() text: String;
   @Input() image: String;
+  @Input() comments: String;
+  
 
   constructor() { }
 

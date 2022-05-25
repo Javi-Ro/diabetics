@@ -1,0 +1,33 @@
+.publication-container{
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.options{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-top: 10px;
+
+  .options-comments{
+    font-size: 12px;
+    line-height: fit-content;
+    align-self: flex-end;
+  }
+
+  .options-link{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    line-height: fit-content;
+  }
+}
+
+@media(min-width: 500px) {
+  .publication-container{
+    max-width: 600px;
+  }
+}
