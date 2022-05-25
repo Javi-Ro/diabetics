@@ -3,14 +3,15 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'folder/:id',
+    path: 'folder',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: '',
-    redirectTo: 'folder/Foro',
+    redirectTo: '',
     pathMatch: 'full'
   }
+  
 ];
 
 @NgModule({
