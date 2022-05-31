@@ -7,8 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { ForoPageRoutingModule } from './foro-routing.module';
 
 import { ForoPage } from './foro.page';
-import { PublicationCardComponent } from '../components/publication-card/publication-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PublicationCardModule } from '../components/publication-card/publication-cards.module';
+import { PublicationCommentsPageModule } from '../publication-comments/publication-comments.module';
 
 @NgModule({
   imports: [
@@ -16,8 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     IonicModule,
     ForoPageRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    PublicationCardModule,
+    PublicationCommentsPageModule
   ],
-  declarations: [ForoPage, PublicationCardComponent, PublicationCardComponent]
+  declarations: [ForoPage]
 })
 export class ForoPageModule {}

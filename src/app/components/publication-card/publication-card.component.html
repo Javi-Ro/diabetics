@@ -1,8 +1,11 @@
 <ion-card class="publication-container">
   <img *ngIf="!isComment" [src]="'assets/images/' + info.image" alt="Publication image">
   <ion-card-header>
-    <ion-card-subtitle>{{ info.username }}</ion-card-subtitle>
-    <ion-card-title>{{ info.title }}</ion-card-title>
+    <div class="username-header">
+      <ion-card-subtitle>{{ info.username }}</ion-card-subtitle>
+      <img src="assets/images/default-profile-img.jpeg" alt="Profile default image" class="username-header-img" *ngIf="isUnique">
+    </div>
+    <ion-card-title *ngIf="!isComment">{{ info.title }}</ion-card-title>
   </ion-card-header>
   <ion-card-content>
     <div class="text">
@@ -14,6 +17,12 @@
         <ion-text> Ver hilo </ion-text> 
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </a>
+    </div>
+    <div class="options-icons" *ngIf="isUnique || isComment">
+      <ion-icon class="options-icons-icon" name="share-social-outline"></ion-icon>
+      <ion-icon class="options-icons-icon" name="send-outline"></ion-icon>
+      <ion-icon class="options-icons-icon" name="warning-outline"></ion-icon>
+      <ion-icon class="options-icons-icon" name="heart-outline"></ion-icon>
     </div>
   </ion-card-content>
 </ion-card>

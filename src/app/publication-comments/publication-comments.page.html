@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Comentarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="main-container-comments">
+  <app-publication-card [info]="post" [isUnique]="true" [isComment]="false" class="main-post-comments"></app-publication-card>
+  <div style="display: flex; justify-content: center;">
+    <ion-card class="comenta-container">
+      <ion-card-header>
+        <ion-card-title>Comenta:</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="assets/images/default-profile-img.jpeg" alt="Profile default image" class="username-header-img">
+        <ion-input clearInput placeholder="Escribe tu comentario..."></ion-input>
+        <ion-button size="small" color="primary" fill="clear">Publicar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <div class="comments-container" *ngFor="let comment of comments">  <!--TODO: En comentarios no se ve bien el username y la foto-->
+    <app-publication-card [info]="comment" [isUnique]="true" [isComment]="true"></app-publication-card>
+  </div>
+</ion-content>

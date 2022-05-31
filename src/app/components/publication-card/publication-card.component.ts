@@ -8,12 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PublicationCardComponent implements OnInit {
 
   @Input() info: any;
-  @Input() isComment: boolean = false;
-  @Input() isUnique: boolean = false;
+  @Input() isComment: boolean;
+  @Input() isUnique: boolean;
   
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('hola');
+  }
 
 }

@@ -10,6 +10,10 @@ const routes: Routes = [
     path: '',
     redirectTo: '',
     pathMatch: 'full'
+  },
+  {
+    path: 'publication-comments',
+    loadChildren: () => import('./publication-comments/publication-comments.module').then( m => m.PublicationCommentsPageModule)
   }
   
 ];

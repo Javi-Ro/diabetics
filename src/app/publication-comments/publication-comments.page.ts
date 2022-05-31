@@ -2,17 +2,17 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
-import { PublicationCardComponent } from '../publication-card/publication-card.component';
 
 @Component({
   selector: 'app-publication-comments',
-  templateUrl: './publication-comments.component.html',
-  styleUrls: ['./publication-comments.component.scss'],
+  templateUrl: './publication-comments.page.html',
+  styleUrls: ['./publication-comments.page.scss'],
 })
-export class PublicationCommentsComponent implements OnInit {
-  
+export class PublicationCommentsPage implements OnInit {
+
   id: any;
   post: any = {};
+  comments: any = [];
 
   constructor(private activatedRoute: ActivatedRoute, private http: HttpClient) { }
 
@@ -20,7 +20,9 @@ export class PublicationCommentsComponent implements OnInit {
     this.id = this.activatedRoute.snapshot.paramMap.get("id");
     this.getPosts().subscribe(res => {
       this.post = res[this.id];
-      console.log(this.post);
+    });
+    this.getComments().subscribe(res => {
+      this.comments = res;
     })
   }
 
@@ -30,6 +32,16 @@ export class PublicationCommentsComponent implements OnInit {
     .pipe(
       map((res:any) => {
         return res.posts
+      })
+    )
+  }
+
+  getComments() {
+    return this.http
+    .get("assets/files/comments.json")
+    .pipe(
+      map((res:any) => {
+        return res.comments
       })
     )
   }

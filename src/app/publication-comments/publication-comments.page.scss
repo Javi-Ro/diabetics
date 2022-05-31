@@ -1,0 +1,43 @@
+.main-container-comments{
+  display: flex;
+  justify-content: center;
+
+  .main-post-comments{
+    display: flex;
+    justify-content: center;
+  }
+
+  .comments-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .comenta-container{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    ion-card-content{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      ion-input{
+        line-height: 1;
+      }
+      .username-header-img{
+        width: 30px;
+        height: fit-content;
+        border-radius: 99px;
+      }
+    }
+    
+  }
+}
+
+@media(min-width: 500px) {
+  .comenta-container{
+    max-width: 600px;
+  }
+}

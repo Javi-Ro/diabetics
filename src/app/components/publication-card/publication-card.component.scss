@@ -23,6 +23,31 @@
     gap: 5px;
     text-decoration: none;
     line-height: fit-content;
+    cursor: pointer;
+  }
+}
+
+.options-icons{
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.options-icons-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.username-header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 20px;
+
+  .username-header-img{
+    width: 40px;
+    border-radius: 99px;
   }
 }
 
