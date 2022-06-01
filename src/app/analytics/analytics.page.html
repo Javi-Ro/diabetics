@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Analytics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="width: 100%;">
+  <div class="analytics-container">
+    <div class="toggle-insulina">
+      <ion-toggle id="toggle-dangerous" slot="start" (ionChange)="toggleDangerous()" [(ngModel)]="isDangerous"></ion-toggle>
+      <ion-label class="toggle-label">Danger</ion-label>
+    </div>
+    <div class="first-container">
+      <ion-text class="title-circle">Monitorización en vivo</ion-text>
+      <div class="insulina-container" [ngClass]="isDangerous?'danger':'normal'" (click)="changeText()">
+        <ion-text class="glucosa-label" id="glucosa-label">{{glucosa}} <br> mg/dl</ion-text>
+        <ion-text class="insulina-text" id="insulina-text" hidden="true">{{clickedText}}</ion-text>
+      </div>
+      <ion-icon icon="alarm-outline" class="alarm-icon" ></ion-icon>
+    </div>
+    
+    <div class="glucosa-chart-section">
+      <ion-text class="title-chart">Historial de glucosa</ion-text>
+      <canvas #glucosaChart class="glucosa-chart"></canvas>
+    </div>
+  </div>
+  
+</ion-content>

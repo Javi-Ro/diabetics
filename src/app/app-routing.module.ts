@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'publication-comments',
     loadChildren: () => import('./publication-comments/publication-comments.module').then( m => m.PublicationCommentsPageModule)
+  },
+  {
+    path: 'analytics',
+    loadChildren: () => import('./analytics/analytics.module').then( m => m.AnalyticsPageModule)
   }
   
 ];

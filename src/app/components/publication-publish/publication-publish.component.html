@@ -10,6 +10,7 @@
 <ion-content [fullscreen]="true">
   <ion-card class="publish-card">
     <ion-card-content>
+      <!-- TODO: Añadir lo de agregar foto -->
       <ion-input placeholder="Enter the title..." class="title-input"></ion-input>
       <ion-textarea placeholder="Enter the description..." class="description-input" autoGrow></ion-textarea>
       <div class="options">
@@ -28,5 +29,5 @@
 </ion-content>
 
 <ion-footer>
-  <ion-button expand="full" fill="solid" class="publicar-button">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
+  <ion-button expand="full" fill="solid" class="publicar-button" routerLink="/folder/Foro">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
 </ion-footer>
