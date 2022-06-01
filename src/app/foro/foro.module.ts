@@ -10,6 +10,7 @@ import { ForoPage } from './foro.page';
 import { HttpClientModule } from '@angular/common/http';
 import { PublicationCardModule } from '../components/publication-card/publication-cards.module';
 import { PublicationCommentsPageModule } from '../publication-comments/publication-comments.module';
+import { PublicationPublishComponent } from '../components/publication-publish/publication-publish.component';
 
 @NgModule({
   imports: [
@@ -19,8 +20,8 @@ import { PublicationCommentsPageModule } from '../publication-comments/publicati
     ForoPageRoutingModule,
     HttpClientModule,
     PublicationCardModule,
-    PublicationCommentsPageModule
+    PublicationCommentsPageModule,
   ],
-  declarations: [ForoPage]
+  declarations: [ForoPage, PublicationPublishComponent]
 })
 export class ForoPageModule {}

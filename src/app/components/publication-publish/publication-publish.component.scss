@@ -1,0 +1,31 @@
+.publish-card{
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  .title-input{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+  .description-input{
+    min-height: 200px;
+  }
+
+  .options{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .options-first{
+    display: flex;
+    gap: 10px;
+  }
+  .options-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.publicar-button{
+  margin: 0;
+}

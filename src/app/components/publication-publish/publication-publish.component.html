@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Publica tu hilo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="publish-card">
+    <ion-card-content>
+      <ion-input placeholder="Enter the title..." class="title-input"></ion-input>
+      <ion-textarea placeholder="Enter the description..." class="description-input" autoGrow></ion-textarea>
+      <div class="options">
+        <div class="options-first">
+          <ion-icon class="options-icon" name="share-social-outline"></ion-icon>
+          <ion-icon class="options-icon" name="attach-outline"></ion-icon>
+          <ion-icon class="options-icon" name="happy-outline"></ion-icon>
+          <ion-icon class="options-icon" name="camera-outline"></ion-icon>
+        </div>
+        <div class="options-last">
+          <ion-icon class="options-icon" name="trash-outline"></ion-icon>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-button expand="full" fill="solid" class="publicar-button">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
+</ion-footer>
