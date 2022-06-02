@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="tasks-container" *ngFor="let task of tasks">
+    <app-task-card [info]="task"></app-task-card>
+  </div>
+</ion-content>

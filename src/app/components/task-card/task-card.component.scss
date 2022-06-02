@@ -1,0 +1,31 @@
+.task-container{
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.slides-container{
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.slider-img{
+  width: 100%;
+  height: max-content;
+}
+
+.estado-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  //gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+  //height: 25px;
+  .estado-icon{
+    width: 25px;
+    height: 25px;
+  }
+  .fecha-container{
+    font-size: 14px;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+}

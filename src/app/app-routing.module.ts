@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'analytics',
     loadChildren: () => import('./analytics/analytics.module').then( m => m.AnalyticsPageModule)
+  },
+  {
+    path: 'tasks',
+    loadChildren: () => import('./tasks/tasks.module').then( m => m.TasksPageModule)
   }
   
 ];

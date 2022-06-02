@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "titulo": "Deporte 30 minutos",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "fecha": "2022-06-17 09:30",
+      "estado": "Aceptada",
+      "planCuidado": "Reto de los 50kg",
+      "medico": "Dr. Baeza",
+      "tipo": "Deporte",
+      "ubicacion": "Ladera del río Vinalopó",
+      "images": [
+        "deporte.png", 
+        "azucar.png",
+        "dieta.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "titulo": "Deporte 30 minutos",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "fecha": "2022-06-17 09:30",
+      "estado": "Rechazada",
+      "planCuidado": "Reto de los 50kg",
+      "medico": "Dr. Baeza",
+      "tipo": "Alimentación",
+      "ubicacion": "Ladera del río Vinalopó",
+      "images": [
+        "deporte.png", 
+        "azucar.png"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Revisión mensual",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "fecha": "2022-06-17 09:30",
+      "estado": "Pendiente",
+      "planCuidado": "Personal",
+      "tipo": "Cita médica",
+      "ubicacion": "Hospital General",
+      "images": [
+        "deporte.png", 
+        "azucar.png"
+      ]
+    }
+  ]
+}

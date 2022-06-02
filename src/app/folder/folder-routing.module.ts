@@ -21,6 +21,10 @@ const routes: Routes = [
         loadChildren: () => import('../analytics/analytics.module').then( m => m.AnalyticsPageModule )
       },
       {
+        path: 'Tareas',
+        loadChildren: () => import('../tasks/tasks.module').then( m => m.TasksPageModule )
+      },
+      {
         path: '',
         redirectTo: 'folder/Foro',
         pathMatch: 'full'
