@@ -11,9 +11,8 @@
       "tipo": "Deporte",
       "ubicacion": "Ladera del río Vinalopó",
       "images": [
-        "deporte.png", 
-        "azucar.png",
-        "dieta.jpg"
+        "azucar.png", 
+        "deporte.png"
       ]
     },
     {

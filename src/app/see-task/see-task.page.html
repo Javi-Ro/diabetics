@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles de la tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="see-task-container">
+    <div class="header-container">
+      <ion-text class="header-title">{{ task.titulo }}</ion-text>
+      <ion-icon class="estado-icon" color="success" *ngIf="task.estado == 'Aceptada'" icon="checkmark-circle-outline"></ion-icon>
+      <ion-icon class="estado-icon" color="danger" *ngIf="task.estado == 'Rechazada'" icon="close-circle-outline"></ion-icon>
+      <ion-icon class="estado-icon" color="warning" *ngIf="task.estado == 'Pendiente'" icon="time-outline"></ion-icon>
+    </div>
+    <ion-text class="header-subtitle">{{ task.fecha }}</ion-text>
+    <ion-slides class="slides-container" scrollbar>
+      <ion-slide *ngFor="let img of task.images" class="slide-container">
+        <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img> <!-- TODO: Distintos tamaños de foto quedan feotes -->
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

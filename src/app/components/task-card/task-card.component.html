@@ -6,7 +6,7 @@
       </ion-slide>
     </ion-slides>
     <div class="estado-container">
-      <ion-card-subtitle class="fecha-container" >{{ info.fecha }}</ion-card-subtitle>
+      <ion-card-subtitle class="fecha-container" >{{ info.fecha }}</ion-card-subtitle> <!-- TODO: Igual estaría bien poner la fecha de otra forma -->
       <ion-icon class="estado-icon" color="success" *ngIf="info.estado == 'Aceptada'" icon="checkmark-circle-outline"></ion-icon>
       <ion-icon class="estado-icon" color="danger" *ngIf="info.estado == 'Rechazada'" icon="close-circle-outline"></ion-icon>
       <ion-icon class="estado-icon" color="warning" *ngIf="info.estado == 'Pendiente'" icon="time-outline"></ion-icon>
@@ -15,20 +15,20 @@
   </ion-card-header>
   <ion-card-content>
     <div class="features-container">
-      <ion-chip color="primary">
+      <ion-chip color="dark">
         <ion-icon name="extension-puzzle-outline"></ion-icon>
         <ion-label>{{ info.tipo }}</ion-label>
       </ion-chip>
-      <ion-chip color="warning">
+      <ion-chip color="dark">
         <ion-icon name="location-outline"></ion-icon>
         <ion-label>{{ info.ubicacion }}</ion-label>
       </ion-chip>
-      <ion-chip color="success">
+      <ion-chip color="dark">
         <ion-icon name="medkit-outline"></ion-icon>
         <ion-label>{{ info.planCuidado }}</ion-label>
       </ion-chip>
     </div>
-    <a [routerLink]="['/folder/Foro/',info.id]" class="options-link"> <!-- Cambiar link -->
+    <a [routerLink]="['/folder/Tareas/',info.id]" class="options-link">
       <ion-text> Mostrar más </ion-text> 
       <ion-icon name="chevron-forward-outline"></ion-icon>
     </a>

@@ -15,7 +15,7 @@ export class PublicationCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('hola');
+    
   }
 
 }

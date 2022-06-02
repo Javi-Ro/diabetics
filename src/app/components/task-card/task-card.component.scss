@@ -29,3 +29,27 @@
     margin-bottom: 0;
   }
 }
+
+.features-container{
+  ion-chip{
+    margin-left: 0;
+  }
+  margin-bottom: 20px;
+}
+
+.options-link{
+  margin-left: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media(min-width: 500px) {
+  ion-card{
+    max-width: 600px;
+  }
+}
