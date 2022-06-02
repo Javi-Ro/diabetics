@@ -11,20 +11,31 @@
   <div class="analytics-container">
     <div class="toggle-insulina">
       <ion-toggle id="toggle-dangerous" slot="start" (ionChange)="toggleDangerous()" [(ngModel)]="isDangerous"></ion-toggle>
-      <ion-label class="toggle-label">Danger</ion-label>
+      <ion-label class="toggle-label">Valor peligroso</ion-label>
     </div>
     <div class="first-container">
-      <ion-text class="title-circle">Monitorización en vivo</ion-text>
+      <ion-text class="title-circle">Monitorización en vivo</ion-text> <!-- TODO: Add animation -->
       <div class="insulina-container" [ngClass]="isDangerous?'danger':'normal'" (click)="changeText()">
         <ion-text class="glucosa-label" id="glucosa-label">{{glucosa}} <br> mg/dl</ion-text>
         <ion-text class="insulina-text" id="insulina-text" hidden="true">{{clickedText}}</ion-text>
       </div>
-      <ion-icon icon="alarm-outline" class="alarm-icon" ></ion-icon>
+      <ion-icon icon="alarm-outline" class="alarm-icon" routerLink="/folder/Analytics/alarm" ></ion-icon> <!-- TODO: Usar ion-chip puede ser mejor -->
     </div>
     
-    <div class="glucosa-chart-section">
+    <div class="glucosa-chart-section" style="margin-bottom: 0;">
       <ion-text class="title-chart">Historial de glucosa</ion-text>
+      <ion-select interface="popover" class="glucosa-data" (ionChange)="changeSelectionChart()" [(ngModel)]="selectedData" >
+        <ion-select-option value="0" >Último día</ion-select-option>
+        <ion-select-option value="1" >Última semana</ion-select-option>
+        <ion-select-option value="2" >Último mes</ion-select-option>
+      </ion-select>
       <canvas #glucosaChart class="glucosa-chart"></canvas>
+    </div>
+
+    <div class="glucosa-chart-section">
+      <ion-text class="title-chart">Glucosa media según horario</ion-text>
+      <div style="height: 30px;"></div>
+      <canvas #mediaChart class="glucosa-chart"></canvas>
     </div>
   </div>
   

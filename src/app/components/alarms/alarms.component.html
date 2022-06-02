@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alarmas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="alarms-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Notificar cuando la glucosa sobrepase</ion-card-subtitle>
+        <ion-toggle class="toggler-inputs" [(ngModel)]="toggleOvercomeRange"></ion-toggle>
+      </ion-card-header>
+      <ion-card-content class="input-container">
+        <ion-range value="0" pin min="0" max="250" [disabled]="!toggleOvercomeRange" [(ngModel)]="rangeOvercome">
+          <ion-icon slot="start" size="small" name="pulse-outline"></ion-icon>
+          <ion-icon slot="end" name="pulse-outline"></ion-icon>
+        </ion-range>
+        <ion-text class="notification-text" [hidden]="!toggleOvercomeRange">Se te notificará cuando la glucosa supere los {{rangeOvercome}} mg/dl</ion-text>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Notificar cuando la glucosa sea inferior</ion-card-subtitle>
+        <ion-toggle [(ngModel)]="toggleLowRange"></ion-toggle>
+      </ion-card-header>
+      <ion-card-content class="input-container">
+        <ion-range value="0" pin min="0" max="250" [disabled]="!toggleLowRange" [(ngModel)]="rangeLow">
+          <ion-icon slot="start" size="small" name="pulse-outline"></ion-icon>
+          <ion-icon slot="end" name="pulse-outline"></ion-icon>
+        </ion-range>
+        <ion-text class="notification-text" [hidden]="!toggleLowRange">Se te notificará cuando la glucosa baje de {{rangeLow}} mg/dl</ion-text>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Alarma temporal</ion-card-subtitle>
+        <ion-toggle [(ngModel)]="toggleTime"></ion-toggle>
+      </ion-card-header>
+      <ion-card-content class="input-container" style="display: flex; align-items:center">
+        <ion-datetime [disabled]="!toggleTime" presentation="time" class="time-inputs" [(ngModel)]="timeAlarm"></ion-datetime>
+        <ion-text class="notification-text" style="align-self: flex-start;" [hidden]="!toggleTime">Se te notificará todos los días a las {{ getTime() }}</ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

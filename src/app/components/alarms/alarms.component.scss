@@ -1,0 +1,51 @@
+.input-container{
+  display: flex;
+  gap: 10px;  
+}
+.glucosa-input{
+  border-bottom: 1px solid whitesmoke;
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+.time-inputs{
+  --background: white;
+  --background-rgb: transparent;
+}
+
+ion-toggle{
+  margin-top: 10px;
+  --handle-height: 20px;
+  --handle-width: 20px;
+  width: 40px;
+  height: 20px;
+}
+
+.notification-text{
+  margin-top: 10px;
+  font-size: 12px;
+  color: #bdbdbd;
+  font-weight: lighter;
+}
+
+@media(min-width: 500px){
+  .alarms-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  ion-card{
+    min-width: 800px;
+  }
+  ion-toggle{
+    padding-left: 0px;
+  }
+  ion-card-subtitle{
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
