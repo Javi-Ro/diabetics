@@ -21,5 +21,49 @@
         <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img> <!-- TODO: Distintos tamaños de foto quedan feotes -->
       </ion-slide>
     </ion-slides>
+    <div class="description-container">
+      <ion-text class="description-text">{{ task.descripcion }}</ion-text>
+    </div>
+    <hr class="separator">
+    <div class="features-container">
+      <div class="feature-container">
+        <ion-icon name="extension-puzzle-outline"></ion-icon>
+        <div class="feature-data">
+          <ion-text class="data-title">Tipo</ion-text>
+          <ion-text class="data-information">{{ task.tipo }}</ion-text>
+        </div>
+      </div>
+      <div class="feature-container">
+        <ion-icon name="location-outline"></ion-icon>
+        <div class="feature-data">
+          <ion-text class="data-title">Ubicación</ion-text>
+          <ion-text class="data-information">{{ task.ubicacion }}</ion-text>
+        </div>
+      </div>
+      <div class="feature-container">
+        <ion-icon name="medkit-outline"></ion-icon>
+        <div class="feature-data">
+          <ion-text class="data-title">Plan de cuidado</ion-text>
+          <ion-text class="data-information">{{ task.planCuidado }}, {{task.medico}}</ion-text>
+        </div>
+      </div>
+    </div>
+    <hr class="separator">
+    <div class="estado-container">
+      <ion-text class="estado-title">Estado actual</ion-text>
+      <ion-list class="list-radios-container">
+        <ion-radio-group [value]="task.estado" [(ngModel)]="task.estado" class="radios-container" >
+          <ion-item class="radio-container">
+            <ion-label>Aceptada</ion-label>
+            <ion-radio value="Aceptada"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Rechazada</ion-label>
+            <ion-radio value="Rechazada"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+    </div>
   </div>
 </ion-content>

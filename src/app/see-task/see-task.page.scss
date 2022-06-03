@@ -1,9 +1,12 @@
 .see-task-container{
-  
+  display: flex;
+  flex-flow: column wrap;
 }
 .header-container{
   padding-top: 20px;
-  padding-left: 20px;
+  //padding-left: 20px;
+  align-self: center;
+  width: 90%;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -17,14 +20,93 @@
   }
 }
 .header-subtitle{
-  padding-left: 20px;
-  color: #666666;
+  //padding-left: 20px;
+  padding-bottom: 20px;
+  align-self: center;
+  width: 90%;
+  color: rgb(113,113,113);
   font-size: 14px;
   font-weight: 700;
 }
 
 .slides-container{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
+}
+
+.description-container{
+  align-self: center;
+  margin-bottom: 20px;
+  width: 90%
+}
+.description-text{
+  line-height: 24px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 400;
+}
+.separator{
+  width: 90%;
+  background-color: #dbdbdb;
+  margin-bottom: 30px;
+}
+.features-container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  align-self: center;
+  gap: 24px;
+  margin-bottom: 30px;
+
+  .feature-container{
+    display: flex;
+    flex-flow: row wrap;
+    ion-icon{
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+    .feature-data{
+      display: flex;
+      flex-flow: column wrap;
+      gap: 4px;
+      .data-title{
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .data-information{
+        font-size: 14px;
+        color: rgb(113,113,113);
+      }
+    }
+  }
+}
+
+.estado-container{
+  margin-bottom: 50px;
+  width: 90%;
+  align-self: center;
+  .estado-title{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .list-radios-container{
+    margin-top: 20px;
+  }
+  .radios-container{
+    border-bottom: none;
+    font-size: 14px;
+    width: 90%;
+    align-self: center;
+    ion-item{
+      --border-style: none;
+      padding-left: 0 !important;
+      --padding-start: 0;
+      width: fit-content;
+      ion-radio{
+        margin-bottom: 12px;
+      }
+    }
+  }
 }
