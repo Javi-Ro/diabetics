@@ -44,26 +44,35 @@
         <ion-icon name="medkit-outline"></ion-icon>
         <div class="feature-data">
           <ion-text class="data-title">Plan de cuidado</ion-text>
-          <ion-text class="data-information">{{ task.planCuidado }}, {{task.medico}}</ion-text>
+          <div class="data-info-container">
+            <ion-text class="data-information" style="display: inline-block;">{{ task.planCuidado }}</ion-text>
+            <ion-text *ngIf="task.medico != null" class="data-information" style="display: inline-block;">, {{task.medico}}</ion-text>
+          </div>
+          
         </div>
       </div>
     </div>
     <hr class="separator">
     <div class="estado-container">
-      <ion-text class="estado-title">Estado actual</ion-text>
+      <ion-text class="estado-title">Cambiar estado actual</ion-text>
       <ion-list class="list-radios-container">
         <ion-radio-group [value]="task.estado" [(ngModel)]="task.estado" class="radios-container" >
           <ion-item class="radio-container">
             <ion-label>Aceptada</ion-label>
             <ion-radio value="Aceptada"></ion-radio>
           </ion-item>
-          <ion-item>
+          <ion-item class="radio-container">
             <ion-label>Rechazada</ion-label>
             <ion-radio value="Rechazada"></ion-radio>
           </ion-item>
         </ion-radio-group>
       </ion-list>
-      
+      <hr class="separator" style="align-self: center; width: 90%; margin-left: 10px; margin-bottom: 20px;" *ngIf="task.estado=='Rechazada'">
+      <ion-item *ngIf="task.estado=='Rechazada'">
+        <ion-label position="stacked">Motivo*</ion-label>
+        <ion-textarea class="motivo-input" autoGrow placeholder="Motivo por el que has rechazado la tarea..."></ion-textarea>
+      </ion-item>
+      <ion-button *ngIf="task.estado=='Rechazada'" size="small" style="margin-left: 10px; align-self: flex-start; margin-top: 25px;">Enviar</ion-button>
     </div>
   </div>
 </ion-content>

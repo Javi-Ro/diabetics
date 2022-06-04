@@ -84,6 +84,8 @@
 }
 
 .estado-container{
+  display: flex;
+  flex-flow: column wrap;
   margin-bottom: 50px;
   width: 90%;
   align-self: center;
@@ -101,12 +103,37 @@
     align-self: center;
     ion-item{
       --border-style: none;
-      padding-left: 0 !important;
-      --padding-start: 0;
+      --padding-start: 10px;
+      border-radius: 10px;
       width: fit-content;
       ion-radio{
         margin-bottom: 12px;
       }
     }
+  }
+}
+ion-item{
+  --border-style: none;
+  --padding-start: 10px;
+  align-self: flex-start;
+  width: 90%;
+}
+ion-textarea{
+  font-size: 12px;
+}
+
+@media(min-width: 500px) {
+  .radio-container{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .motivo-input{
+    font-size: 16px;
+  }
+  .description-container{
+    margin-top: 20px;
+  }
+  ion-img{
+    border-radius: 10px;
   }
 }

@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   templateUrl: './see-task.page.html',
   styleUrls: ['./see-task.page.scss'],
 })
-export class SeeTaskPage implements OnInit {
+export class SeeTaskPage implements OnInit { /* TODO: Solve see taskpage problem */
 
   id: any;
   task: any = {};
