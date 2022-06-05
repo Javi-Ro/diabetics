@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button icon="arrow-back"></ion-back-button>
     </ion-buttons>
-    <ion-title>Publica tu hilo</ion-title>
+    <ion-title>Crea una tarea</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,7 +12,10 @@
     <ion-card-content>
       <!-- TODO: Añadir lo de agregar foto -->
       <ion-input placeholder="Enter the title..." class="title-input"></ion-input>
+      <ion-input placeholder="Enter the type..." class="type-input"></ion-input>
+      <ion-input placeholder="Enter the ubication..." class="ubi-input"></ion-input>
       <ion-textarea placeholder="Enter the description..." class="description-input" autoGrow></ion-textarea>
+      <ion-datetime class="date-input"></ion-datetime>
       <div class="options">
         <div class="options-first">
           <ion-icon class="options-icon" name="attach-outline" (click)="pickImage()" ></ion-icon>
@@ -20,7 +23,7 @@
           <ion-icon class="options-icon" name="camera-outline"></ion-icon>
         </div>
         <div class="options-last">
-          <ion-icon class="options-icon" style="color:red" name="trash-outline" routerLink="/folder/Foro" ></ion-icon>
+          <ion-icon class="options-icon" style="color:red" name="trash-outline" routerLink="/folder/Tareas" ></ion-icon>
         </div>
       </div>
     </ion-card-content>
@@ -28,5 +31,5 @@
 </ion-content>
 
 <ion-footer>
-  <ion-button expand="full" fill="solid" class="publicar-button" routerLink="/folder/Foro">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
+  <ion-button expand="full" fill="solid" class="publicar-button" routerLink="/folder/Tareas">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
 </ion-footer>

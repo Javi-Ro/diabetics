@@ -10,6 +10,7 @@ import { TasksPage } from './tasks.page';
 import { TaskCardComponent } from '../components/task-card/task-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SeeTaskPage } from '../see-task/see-task.page';
+import { TaskPublishComponent } from '../components/task-publish/task-publish.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { SeeTaskPage } from '../see-task/see-task.page';
     TasksPageRoutingModule,
     HttpClientModule
   ],
-  declarations: [TasksPage, TaskCardComponent, SeeTaskPage]
+  declarations: [TasksPage, TaskCardComponent, TaskPublishComponent]
 })
 export class TasksPageModule {}

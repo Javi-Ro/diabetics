@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ImagePicker } from '@awesome-cordova-plugins/image-picker/ngx';
 
 @Component({
-  selector: 'app-publication-publish',
-  templateUrl: './publication-publish.component.html',
-  styleUrls: ['./publication-publish.component.scss'],
+  selector: 'app-task-publish',
+  templateUrl: './task-publish.component.html',
+  styleUrls: ['./task-publish.component.scss'],
   providers: [ImagePicker]
 })
-export class PublicationPublishComponent implements OnInit {
+export class TaskPublishComponent implements OnInit {
 
   images: any = [];
   options: any;

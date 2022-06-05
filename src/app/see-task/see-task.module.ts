@@ -8,7 +8,6 @@ import { SeeTaskPageRoutingModule } from './see-task-routing.module';
 
 import { SeeTaskPage } from './see-task.page';
 import { HttpClientModule } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -17,8 +16,9 @@ import { ActivatedRoute } from '@angular/router';
     IonicModule,
     SeeTaskPageRoutingModule,
     HttpClientModule,
-    ActivatedRoute
+    
   ],
-  declarations: [SeeTaskPage]
+  declarations: [SeeTaskPage],
+  providers: []
 })
 export class SeeTaskPageModule {}

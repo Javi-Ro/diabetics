@@ -1,0 +1,44 @@
+.publish-card{
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  .title-input{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+  .type-input{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+  .ubi-input{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+  .date-input{
+    margin-bottom: 50px;
+    --background: transparent;
+  }
+  .description-input{
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+
+  .options{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .options-first{
+    display: flex;
+    gap: 10px;
+  }
+  .options-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.publicar-button{
+  margin: 0;
+}
