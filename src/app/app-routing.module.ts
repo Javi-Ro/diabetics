@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'see-task',
     loadChildren: () => import('./see-task/see-task.module').then( m => m.SeeTaskPageModule)
+  },
+  {
+    path: 'mis-medicos',
+    loadChildren: () => import('./mis-medicos/mis-medicos.module').then( m => m.MisMedicosPageModule)
   }
   
 ];

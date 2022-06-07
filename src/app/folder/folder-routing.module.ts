@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('../tasks/tasks.module').then( m => m.TasksPageModule )
       },
       {
+        path: 'Mis-medicos',
+        loadChildren: () => import('../mis-medicos/mis-medicos.module').then( m => m.MisMedicosPageModule )
+      },
+      {
         path: '',
         redirectTo: 'folder/Foro',
         pathMatch: 'full'

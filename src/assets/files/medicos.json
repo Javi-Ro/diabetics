@@ -1,0 +1,30 @@
+{
+  "medicos": [
+    {
+      "id": 0,
+      "nombre": "Adolfo Suárez",
+      "trabajo": "Fisioterapeuta"
+
+    },
+    {
+      "id": 1,
+      "nombre": "Pepe Quiles",
+      "trabajo": "Médico de cabecera" 
+    },
+    {
+      "id": 2,
+      "nombre": "Elena Martínez",
+      "trabajo": "Enfermera" 
+    },
+    {
+      "id": 3,
+      "nombre": "Elena Martínez",
+      "trabajo": "Enfermera" 
+    },
+    {
+      "id": 4,
+      "nombre": "Elena Martínez",
+      "trabajo": "Enfermera" 
+    }
+  ]
+}

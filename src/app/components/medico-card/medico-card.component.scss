@@ -1,0 +1,31 @@
+.medico-container{
+  display: flex;
+  flex-flow: row wrap;
+  
+  .medico-container-inside{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 15px;
+  } 
+
+  .medico-img-image{
+    width: 40px;
+    border-radius: 99px;
+  }
+
+  .medico-info{
+    display: flex;
+    flex-flow: column wrap;
+
+    .medico-info-name{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .medico-info-trabajo{
+      font-size: 12px;
+      color: rgb(113,113,113);
+      font-weight: 400;
+    }
+  }
+}

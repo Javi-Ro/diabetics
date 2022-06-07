@@ -11,9 +11,15 @@
   <div class="see-task-container">
     <div class="header-container">
       <ion-text class="header-title">{{ task.titulo }}</ion-text>
-      <ion-icon class="estado-icon" color="success" *ngIf="task.estado == 'Aceptada'" icon="checkmark-circle-outline"></ion-icon>
-      <ion-icon class="estado-icon" color="danger" *ngIf="task.estado == 'Rechazada'" icon="close-circle-outline"></ion-icon>
-      <ion-icon class="estado-icon" color="warning" *ngIf="task.estado == 'Pendiente'" icon="time-outline"></ion-icon>
+      <div *ngIf="task.estado == 'Aceptada'">
+        <ion-icon class="estado-icon" color="success" icon="checkmark-circle-outline"></ion-icon>
+      </div>
+      <div *ngIf="task.estado == 'Rechazada'">
+        <ion-icon class="estado-icon" color="danger" icon="close-circle-outline"></ion-icon>
+      </div>
+      <div *ngIf="task.estado == 'Pendiente'">
+        <ion-icon class="estado-icon" color="warning" icon="time-outline"></ion-icon>
+      </div>
     </div>
     <ion-text class="header-subtitle">{{ task.fecha }}</ion-text>
     <ion-slides class="slides-container" scrollbar>

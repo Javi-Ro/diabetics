@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Mis médicos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div class="medicos-container" *ngFor="let medico of medicos">
+      <app-medico-card [info]="medico" ></app-medico-card>
+    </div>
+    
+  </ion-list>
+</ion-content>

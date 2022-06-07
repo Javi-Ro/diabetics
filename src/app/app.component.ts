@@ -9,7 +9,7 @@ export class AppComponent {
     { title: 'Foro', url: '/folder/Foro', icon: 'globe' },
     { title: 'Analytics', url: '/folder/Analytics', icon: 'analytics' },
     { title: 'Tareas', url: '/folder/Tareas', icon: 'add-circle' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
+    { title: 'Mis médicos', url: '/folder/Mis-medicos', icon: 'medkit' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
