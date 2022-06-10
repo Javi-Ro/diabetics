@@ -1,0 +1,28 @@
+{
+  "medicos": [
+    {
+      "id": 0,
+      "nombre": "Pepe Oliva",
+      "trabajo": "Entrenador personal"
+
+    },
+    {
+      "id": 1,
+      "nombre": "Ramón y Cajal",
+      "trabajo": "Fisioterapeuta"
+
+    },
+    {
+      "id": 2,
+      "nombre": "Ernesto Valverde",
+      "trabajo": "Nutricionista"
+
+    },
+    {
+      "id": 3,
+      "nombre": "Alberto González",
+      "trabajo": "Médico"
+
+    }
+  ]
+}
