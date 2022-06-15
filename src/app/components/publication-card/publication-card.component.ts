@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-publication-card',
@@ -11,11 +12,36 @@ export class PublicationCardComponent implements OnInit {
   @Input() isComment: boolean;
   @Input() isUnique: boolean;
   
+  like: boolean = false;
 
-  constructor() { }
+  constructor(private toastController: ToastController) { }
 
   ngOnInit() {
     
+  }
+
+  changeLike() {
+    this.like = !this.like;
+  }
+
+  async openToast() {
+    const toast = await this.toastController.create({
+      message: 'Link copied to clipboard',
+      duration: 2000,
+      position: "bottom",
+      color: "primary"
+    });
+    toast.present();
+  }
+
+  async reportPublication() {
+    const toast = await this.toastController.create({
+      message: 'Publication reported',
+      duration: 2000,
+      position: "bottom",
+      color: "warning"
+    });
+    toast.present();
   }
 
 }

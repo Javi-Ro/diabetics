@@ -51,6 +51,16 @@
     border-radius: 99px;
   }
 }
+.img-profile-comment{
+  height: 40px !important;
+}
+
+.likes-text{
+  font-size: 14px;
+  color: #666666;
+  margin-top: 1px;
+  margin-right: -7px;
+}
 
 @media(min-width: 500px) {
   .publication-container{

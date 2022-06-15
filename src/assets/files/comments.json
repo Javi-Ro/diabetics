@@ -3,21 +3,25 @@
     {
       "id": 0,
       "username": "@mariaa_",
+      "likes": 15,
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
     },
     {
       "id": 1,
       "username": "@mariaa_",
+      "likes": 15,
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
     },
     {
       "id": 2,
       "username": "@mariaa_",
+      "likes": 15,
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
     },
     {
       "id": 3,
       "username": "@mariaa_",
+      "likes": 15,
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
     }
   ]

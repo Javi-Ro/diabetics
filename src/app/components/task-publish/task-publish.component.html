@@ -10,7 +10,6 @@
 <ion-content [fullscreen]="true">
   <ion-card class="publish-card">
     <ion-card-content>
-      <!-- TODO: Añadir lo de agregar foto -->
       <ion-input placeholder="Introduce un título..." class="title-input"></ion-input>
       <ion-input placeholder="Introduce el tipo..." class="type-input"></ion-input>
       <ion-input placeholder="Introduce la ubicacion..." class="ubi-input"></ion-input>
@@ -18,9 +17,9 @@
       <ion-datetime class="date-input"></ion-datetime>
       <div class="options">
         <div class="options-first">
-          <ion-icon class="options-icon" name="attach-outline" (click)="pickImage()" ></ion-icon>
-          <ion-icon class="options-icon" name="happy-outline"></ion-icon>
-          <ion-icon class="options-icon" name="camera-outline"></ion-icon>
+          <ion-icon class="options-icon" name="attach-outline" (click)="changeImages()" [ngClass]="{'more-visible': imagesOpened}" ></ion-icon>
+          <ion-icon class="options-icon" name="happy-outline" (click)="openToast()"></ion-icon>
+          <ion-icon class="options-icon" name="camera-outline" (click)="openToast()"></ion-icon>
         </div>
         <div class="options-last">
           <ion-icon class="options-icon" style="color:red" name="trash-outline" routerLink="/folder/Tareas" ></ion-icon>
@@ -28,8 +27,19 @@
       </div>
     </ion-card-content>
   </ion-card>
+  <ion-card class="images-content" *ngIf="imagesOpened">
+    <ion-card-content class="images-content-container">
+      <ion-card-subtitle class="images-content-title">Imágenes adjuntadas</ion-card-subtitle>
+      <div class="images-main">
+        <div class="images-container" *ngFor="let image of images">
+          <img class="images-image" [src]="'assets/images/' + image">
+        </div>
+      </div> 
+      <ion-button fill="outline" size="small">Adjuntar más</ion-button>     
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer>
-  <ion-button expand="full" fill="solid" class="publicar-button" routerLink="/folder/Tareas">Publicar</ion-button> <!-- TODO: Boton publicar en pc se ve pocho -->
+  <ion-button expand="full" fill="solid" class="publicar-button" routerLink="/folder/Tareas">Publicar</ion-button>
 </ion-footer>

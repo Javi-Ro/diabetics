@@ -22,7 +22,7 @@
     </ion-card>
   </div>
   
-  <div class="comments-container" *ngFor="let comment of comments">  <!--TODO: En comentarios no se ve bien el username y la foto-->
+  <div class="comments-container" *ngFor="let comment of comments">
     <app-publication-card [info]="comment" [isUnique]="true" [isComment]="true"></app-publication-card>
   </div>
 </ion-content>

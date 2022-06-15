@@ -29,3 +29,28 @@
 .publicar-button{
   margin: 0;
 }
+
+.more-visible{
+  color: black;
+}
+
+.images-content{
+  display: flex;
+  gap: 10px;
+  .images-main{
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    margin-bottom: 40px;
+  }
+}
+.images-content-title{
+  margin-bottom: 20px;
+}
+.images-container{
+  display: flex;
+  .images-image{
+    width: 100px;
+    border-radius: 10px;
+  }
+}

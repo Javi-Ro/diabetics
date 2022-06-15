@@ -1,4 +1,4 @@
-<ion-item class="medico-container" href="/folder/Mis-medicos">
+<ion-item class="medico-container" [detail]="!search">
   <div class="medico-container-inside">
     <div class="medico-img">
       <img src="assets/images/default-profile-img.jpeg" class="medico-img-image">
@@ -8,5 +8,6 @@
       <ion-text class="medico-info-trabajo">{{ info.trabajo }}</ion-text>
     </div>
   </div>
-  <!-- TODO: Añadir boton "SEGUIR" para cuando se muestren medicos de búsqueda -->
+  <ion-button *ngIf="search && !buttonClicked" shape="round" fill="outline" slot="end" class="añadir-button" (click)="changeAnadir()" >Añadir</ion-button>
+  <ion-button *ngIf="search && buttonClicked" shape="round" slot="end" class="añadir-button" (click)="changeAnadir()" >Añadido</ion-button>
 </ion-item>

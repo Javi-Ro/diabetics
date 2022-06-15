@@ -1,7 +1,7 @@
 <ion-card class="publication-container">
   <img *ngIf="!isComment" [src]="'assets/images/' + info.image" alt="Publication image">
   <ion-card-header>
-    <div class="username-header">
+    <div class="username-header" [ngClass]="{'img-profile-comment': isComment}">
       <ion-card-subtitle>{{ info.username }}</ion-card-subtitle>
       <img src="assets/images/default-profile-img.jpeg" alt="Profile default image" class="username-header-img" *ngIf="isUnique">
     </div>
@@ -18,10 +18,13 @@
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </a>
     </div>
-    <div class="options-icons" *ngIf="isUnique || isComment"> <!-- TODO: Iconos no tienen interacciones -->
-      <ion-icon class="options-icons-icon" name="share-social-outline"></ion-icon>
-      <ion-icon class="options-icons-icon" name="warning-outline"></ion-icon>
-      <ion-icon class="options-icons-icon" name="heart-outline"></ion-icon>
+    <div class="options-icons" *ngIf="isUnique || isComment">
+      <ion-text class="likes-text" *ngIf="!like">{{info.likes}}</ion-text>
+      <ion-text class="likes-text" *ngIf="like">{{info.likes + 1}}</ion-text>
+      <ion-icon class="options-icons-icon" name="heart-outline" *ngIf="!like" (click)="changeLike()"></ion-icon>
+      <ion-icon class="options-icons-icon" name="heart" *ngIf="like" (click)="changeLike()"></ion-icon>
+      <ion-icon class="options-icons-icon" name="share-social-outline" (click)="openToast()"></ion-icon>
+      <ion-icon class="options-icons-icon" name="warning-outline" (click)="reportPublication()"></ion-icon>
     </div>
   </ion-card-content>
 </ion-card>

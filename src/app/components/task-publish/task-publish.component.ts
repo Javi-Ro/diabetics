@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImagePicker } from '@awesome-cordova-plugins/image-picker/ngx';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-task-publish',
@@ -9,10 +10,11 @@ import { ImagePicker } from '@awesome-cordova-plugins/image-picker/ngx';
 })
 export class TaskPublishComponent implements OnInit {
 
-  images: any = [];
+  images: any = ['ejemplo.jpg', 'azucar.png'];
   options: any;
+  imagesOpened: boolean = false;
 
-  constructor(private imagePicker: ImagePicker) { }
+  constructor(private imagePicker: ImagePicker, private toastController:ToastController) { }
 
   ngOnInit() {}
 
@@ -31,6 +33,20 @@ export class TaskPublishComponent implements OnInit {
     (error) => {
       alert(error);
     });
+  }
+
+  changeImages() {
+    this.imagesOpened = !this.imagesOpened;
+  }
+
+  async openToast() {
+    const toast = await this.toastController.create({
+      message: 'Functionality not available',
+      duration: 2000,
+      position: "bottom",
+      color: "light"
+    });
+    toast.present();
   }
 
 }

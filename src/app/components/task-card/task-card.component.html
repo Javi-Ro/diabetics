@@ -2,11 +2,11 @@
   <ion-card-header>
     <ion-slides class="slides-container" scrollbar>
       <ion-slide *ngFor="let img of info.images" class="slide-container">
-        <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img> <!-- TODO: Distintos tamaños de foto quedan feotes -->
+        <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img>
       </ion-slide>
     </ion-slides>
     <div class="estado-container">
-      <ion-card-subtitle class="fecha-container" >{{ info.fecha }}</ion-card-subtitle> <!-- TODO: Igual estaría bien poner la fecha de otra forma -->
+      <ion-card-subtitle class="fecha-container" >{{ info.fecha }}</ion-card-subtitle>
       <ion-icon class="estado-icon" color="success" *ngIf="info.estado == 'Aceptada'" icon="checkmark-circle-outline"></ion-icon>
       <ion-icon class="estado-icon" color="danger" *ngIf="info.estado == 'Rechazada'" icon="close-circle-outline"></ion-icon>
       <ion-icon class="estado-icon" color="warning" *ngIf="info.estado == 'Pendiente'" icon="time-outline"></ion-icon>

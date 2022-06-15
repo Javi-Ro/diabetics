@@ -3,7 +3,6 @@
     <ion-buttons slot="start" class="toolbar-styles">
       <ion-menu-button *ngIf="!showSearch"></ion-menu-button>
       <ion-icon icon="arrow-back-outline" color="primary" class="back-icon" *ngIf="showSearch" (click)="toggleSearchView()"></ion-icon>
-      <!-- TODO: tE HAS QUEDADO AGREGANDO ICONO DE VOLVER A VISTA DE NO BUSCAR -->
     </ion-buttons>
     <ion-title *ngIf="!showSearch">Mis médicos</ion-title>
     <ion-searchbar *ngIf="showSearch" class="search-container" placeholder="Buscar..." searchIcon="false" ></ion-searchbar>
@@ -14,7 +13,7 @@
 <ion-content>
   <ion-list>
     <div class="medicos-container" *ngFor="let medico of medicosVisibles">
-      <app-medico-card [info]="medico" ></app-medico-card>
+      <app-medico-card [info]="medico" [search]="showSearch" ></app-medico-card>
     </div>
   </ion-list>
 </ion-content>

@@ -14,12 +14,12 @@
       <ion-label class="toggle-label">Valor peligroso</ion-label>
     </div>
     <div class="first-container">
-      <ion-text class="title-circle">Monitorización en vivo</ion-text> <!-- TODO: Add animation -->
+      <ion-text class="title-circle">Monitorización en vivo</ion-text>
       <div class="insulina-container" [ngClass]="isDangerous?'danger':'normal'" (click)="changeText()">
         <ion-text class="glucosa-label" id="glucosa-label">{{glucosa}} <br> mg/dl</ion-text>
         <ion-text class="insulina-text" id="insulina-text" hidden="true">{{clickedText}}</ion-text>
       </div>
-      <ion-icon icon="alarm-outline" class="alarm-icon" routerLink="/folder/Analytics/alarm" ></ion-icon> <!-- TODO: Usar ion-chip puede ser mejor -->
+      <ion-icon icon="alarm-outline" class="alarm-icon" routerLink="/folder/Analytics/alarm" ></ion-icon>
     </div>
     
     <div class="glucosa-chart-section" style="margin-bottom: 0;">

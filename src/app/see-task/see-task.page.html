@@ -24,7 +24,7 @@
     <ion-text class="header-subtitle">{{ task.fecha }}</ion-text>
     <ion-slides class="slides-container" scrollbar>
       <ion-slide *ngFor="let img of task.images" class="slide-container">
-        <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img> <!-- TODO: Distintos tamaños de foto quedan feotes -->
+        <ion-img [src]="'assets/images/' + img" class="slider-img" ></ion-img>
       </ion-slide>
     </ion-slides>
     <div class="description-container">
