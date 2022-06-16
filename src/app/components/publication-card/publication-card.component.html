@@ -3,7 +3,7 @@
   <ion-card-header>
     <div class="username-header" [ngClass]="{'img-profile-comment': isComment}">
       <ion-card-subtitle>{{ info.username }}</ion-card-subtitle>
-      <img src="assets/images/default-profile-img.jpeg" alt="Profile default image" class="username-header-img" *ngIf="isUnique">
+      <img [src]="'assets/images/' + info.imageProfile" alt="Profile default image" class="username-header-img" *ngIf="isUnique">
     </div>
     <ion-card-title *ngIf="!isComment">{{ info.title }}</ion-card-title>
   </ion-card-header>
