@@ -2,42 +2,42 @@
   "posts": [
     {
       "id": 0,
-      "username": "@mariaa_",
+      "username": "@alex123_",
       "title": "Haz deporte",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
-      "image": "ejemplo.jpg",
-      "imageProfile": "default-profile-img.jpeg",
-      "comments": 5,
+      "text": "El deporte es sanísimo",
+      "image": "post1.jpg",
+      "imageProfile": "perfil2.jpg",
+      "comments": 4,
       "likes": 15
     },
     {
       "id": 1,
       "username": "@mariaa_",
-      "title": "Haz deporte",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "title": "El azúcar es malo",
+      "text": "no toméis azúcar en grandes cantidades porque puede haceros much daño, tomad siempre muchas precauciones al respecto",
       "image": "azucar.png",
-      "imageProfile": "default-profile-img.jpeg",
-      "comments": 100,
+      "imageProfile": "perfil1.jpg",
+      "comments": 4,
       "likes": 15
     },
     {
       "id": 2,
-      "username": "@mariaa_",
-      "title": "Haz deporte",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "username": "@angel_",
+      "title": "Aquí en el gym",
+      "text": "en el gym haciendo pesas pero siempre precavido",
       "image": "deporte.png",
-      "imageProfile": "default-profile-img.jpeg",
-      "comments": 500123,
+      "imageProfile": "perfil3.jpg",
+      "comments": 4,
       "likes": 15
     },
     {
       "id": 3,
-      "username": "@mariaa_",
-      "title": "Haz deporte",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
+      "username": "@angela3",
+      "title": "Dieta",
+      "text": "Una dieta equilibrada que contenga un poco de todo es lo mejor para estar sano, os animo a que compartáis vuestra dieta en los comentarios",
       "image": "dieta.jpg",
-      "imageProfile": "default-profile-img.jpeg",
-      "comments": 1500000,
+      "imageProfile": "perfil4.jpg",
+      "comments": 4,
       "likes": 15
     }
   ]

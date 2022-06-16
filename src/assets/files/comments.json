@@ -4,29 +4,29 @@
       "id": 0,
       "username": "@mariaa_",
       "likes": 15,
-      "imageProfile": "default-profile-img.jpeg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
+      "imageProfile": "perfil1.jpg",
+      "text": "Que guayyy, me encanta esta publicación, yo también hago mucho deporte"
     },
     {
       "id": 1,
-      "username": "@mariaa_",
+      "username": "@angel_",
       "likes": 15,
-      "imageProfile": "default-profile-img.jpeg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
+      "imageProfile": "perfil3.jpg",
+      "text": "Viva el deporte y el futbol, hala madrid"
     },
     {
       "id": 2,
-      "username": "@mariaa_",
+      "username": "@mariaangeles",
       "likes": 15,
-      "imageProfile": "default-profile-img.jpeg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
+      "imageProfile": "perfil5.jpg",
+      "text": "Me parece super bieeenn, me encanta :)"
     },
     {
       "id": 3,
-      "username": "@mariaa_",
+      "username": "@angela3",
       "likes": 15,
-      "imageProfile": "default-profile-img.jpeg",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae"
+      "imageProfile": "perfil4.jpg",
+      "text": "Estoy totalmente de acuerdo la verdad"
     }
   ]
 }
