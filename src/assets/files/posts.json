@@ -6,6 +6,7 @@
       "title": "Haz deporte",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
       "image": "ejemplo.jpg",
+      "imageProfile": "default-profile-img.jpeg",
       "comments": 5,
       "likes": 15
     },
@@ -15,6 +16,7 @@
       "title": "Haz deporte",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
       "image": "azucar.png",
+      "imageProfile": "default-profile-img.jpeg",
       "comments": 100,
       "likes": 15
     },
@@ -24,6 +26,7 @@
       "title": "Haz deporte",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
       "image": "deporte.png",
+      "imageProfile": "default-profile-img.jpeg",
       "comments": 500123,
       "likes": 15
     },
@@ -33,6 +36,7 @@
       "title": "Haz deporte",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit, interdum vulputate iaculis dis condimentum. Aptent netus hac purus euismod vitae primis maecenas montes, arcu pretium cras tellus posuere litora per, lobortis torquent interdum morbi tempus dignissim curae",
       "image": "dieta.jpg",
+      "imageProfile": "default-profile-img.jpeg",
       "comments": 1500000,
       "likes": 15
     }

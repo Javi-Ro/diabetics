@@ -1,7 +1,7 @@
 <ion-item class="medico-container" [detail]="!search">
   <div class="medico-container-inside">
     <div class="medico-img">
-      <img src="assets/images/default-profile-img.jpeg" class="medico-img-image">
+      <img [src]="'assets/images/' + info.image" class="medico-img-image">
     </div>
     <div class="medico-info">
       <ion-text class="medico-info-name">{{ info.nombre }}</ion-text>
