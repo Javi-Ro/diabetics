@@ -11,6 +11,7 @@ export class AppComponent {
     { title: 'Tareas', url: '/folder/Tareas', icon: 'add-circle' },
     { title: 'Mis médicos', url: '/folder/Mis-medicos', icon: 'medkit' },
     { title: 'Mi rutina', url: '/rutina', icon: 'time' },
+    { title: 'Tienda', url: '/tienda', icon: 'cart' },
     // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     // { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
     

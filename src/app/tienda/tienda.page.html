@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tieda de productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let producto of productos">
+    <ion-card-header>
+      <ion-card-title>
+        <ion-img [src]="producto.img">
+        </ion-img>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text>
+        <h2 style="color: white; font-weight: bold; margin-bottom: 6px; font-size: 1.2em;">{{ producto.titulo }}</h2>
+      </ion-text>
+      <ion-text>
+        <h3>{{ producto.description }}</h3>
+      </ion-text>
+      <div style="display: flex; justify-content: end;">
+        <ion-button color="primary" style="height: 28px; margin-top: 14px;">
+          Saber más
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
