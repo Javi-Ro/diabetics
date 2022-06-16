@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'mis-medicos',
     loadChildren: () => import('./mis-medicos/mis-medicos.module').then( m => m.MisMedicosPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
   }
   
 ];
