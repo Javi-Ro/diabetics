@@ -3,28 +3,28 @@
     {
       "id": 0,
       "nombre": "Pepe Oliva",
-      "image": "default-profile-img.jpeg",
+      "image": "medicos1.jpg",
       "trabajo": "Entrenador personal"
 
     },
     {
       "id": 1,
       "nombre": "Ramón y Cajal",
-      "image": "default-profile-img.jpeg",
+      "image": "medicos2.jpg",
       "trabajo": "Fisioterapeuta"
 
     },
     {
       "id": 2,
       "nombre": "Ernesto Valverde",
-      "image": "default-profile-img.jpeg",
+      "image": "medicos3.jpg",
       "trabajo": "Nutricionista"
 
     },
     {
       "id": 3,
       "nombre": "Alberto González",
-      "image": "default-profile-img.jpeg",
+      "image": "medicos4.jpeg",
       "trabajo": "Médico"
 
     }
