@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="toolbar-styles">
+      <a [routerLink]="['/folder/Mis-medicos']" style="text-decoration: none;">
+        <ion-icon icon="arrow-back-outline" color="primary" class="back-icon"></ion-icon>
+      </a>
+    </ion-buttons>
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let message of messages">
+      <ion-col size="9" *ngIf="message.from === true" class="message from-message">
+        <span> {{ message.text }} </span>
+        <div class="time">
+          {{ message.createdAt | date : 'short' }}
+        </div>
+      </ion-col>
+      <ion-col offset="3" size="9" *ngIf="message.from === false" class="message my-message">
+        <span> {{ message.text }} </span>
+        <div class="time">
+          {{ message.createdAt | date : 'short' }}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-row class="send-message-toolbar">
+      <ion-col size="10">
+        <textarea maxRows="3" autosize placeholder="Escribe tu mensaje aquí..." [(ngModel)]="newMessage" class="message-input"></textarea>
+      </ion-col>
+      <ion-col  size="2">
+        <ion-button expand="block" fill="clear" color="primary" [disabled]="newMessage === ''" class="msg-button" (click)="sendMessage()">
+          <ion-icon name="send" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
