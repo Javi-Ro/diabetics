@@ -10,8 +10,10 @@ export class AppComponent {
     { title: 'Analytics', url: '/folder/Analytics', icon: 'analytics' },
     { title: 'Tareas', url: '/folder/Tareas', icon: 'add-circle' },
     { title: 'Mis médicos', url: '/folder/Mis-medicos', icon: 'medkit' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Mi rutina', url: '/rutina', icon: 'time' },
+    // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
+    // { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

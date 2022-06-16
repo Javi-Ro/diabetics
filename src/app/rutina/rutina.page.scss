@@ -1,0 +1,9 @@
+.alimentos-chart-section {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    transition: .3s ease all;
+    margin-bottom: 50px;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+}

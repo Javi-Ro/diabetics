@@ -11,13 +11,18 @@ export class ChatPage implements OnInit {
   
   messages = [
     {
-      text : "Hola",
+      text : "Hola buenos dias, digame que necesita hoy? Cualquier cosa no dude en preguntarme",
       from : true,
       createdAt : new Date().getTime()
     },
     {
-      text : "Hola",
+      text : "Buenas, le queria comentar acerca de un problema que llevo teniendo con mi dieta los ultimos dias",
       from : false,
+      createdAt : new Date().getTime()
+    },
+    {
+      text : "Si claro! Pregunteme lo que haga falta, para eso estamos, para ayudar. Antes que nada me gustaria saber cual es su dieta actualmente y si es alergico a algun tipo de alimento y/o medicamento",
+      from : true,
       createdAt : new Date().getTime()
     }
   ]

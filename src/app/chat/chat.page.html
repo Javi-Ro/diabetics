@@ -5,21 +5,22 @@
         <ion-icon icon="arrow-back-outline" color="primary" class="back-icon"></ion-icon>
       </a>
     </ion-buttons>
-    <ion-title>Chat</ion-title>
+    <ion-button color="tertiary nav-btn" slot="end" id="plan-cuidado"><span style="color: white;">Plan de cuidado</span></ion-button>
+    <ion-button color="success nav-btn" slot="end" id="pedir-cita"><span style="color: white;">Pedir cita</span></ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid>
+  <ion-grid style="margin-top: 7px;">
     <ion-row *ngFor="let message of messages">
       <ion-col size="9" *ngIf="message.from === true" class="message from-message">
-        <span> {{ message.text }} </span>
+        <span>{{ message.text }}</span>
         <div class="time">
           {{ message.createdAt | date : 'short' }}
         </div>
       </ion-col>
       <ion-col offset="3" size="9" *ngIf="message.from === false" class="message my-message">
-        <span> {{ message.text }} </span>
+        <span>{{ message.text }}</span>
         <div class="time">
           {{ message.createdAt | date : 'short' }}
         </div>
@@ -42,3 +43,87 @@
     </ion-row>
   </ion-toolbar>
 </ion-footer>
+
+<ion-modal
+  trigger="pedir-cita"
+  [swipeToClose]="true"
+>
+  <ng-template>
+    <ion-content>
+      <div style="display: flex; justify-content:center; padding-top: 20px; margin-bottom: 20px;">
+        <ion-datetime class="date-input"></ion-datetime>
+      </div>
+      <ion-button expand="block" color="success" style="margin-left: 10px; margin-right: 10px;">Pedir cita</ion-button>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<ion-modal
+  trigger="plan-cuidado"
+  [swipeToClose]="true"
+>
+  <ng-template>
+    <ion-content>
+      <ion-toolbar color="light" style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: center;"><span>Plan de cuidado</span></div>
+      </ion-toolbar>
+      <div class="features-container">
+        <div class="feature-container">
+          <ion-icon name="medkit-outline"></ion-icon>
+          <div class="feature-data">
+            <ion-text class="data-title">Plan</ion-text>
+            <div class="data-info-container">
+              <ion-text class="data-information" style="display: inline-block;">Perder 50kg</ion-text>
+            </div>
+          </div>
+        </div>
+        <div class="feature-container">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <div class="feature-data">
+            <ion-text class="data-title">Descripcion</ion-text>
+            <div class="data-info-container">
+              <ion-text class="data-information" style="display: inline-block;">45 minutos de cardio</ion-text>
+            </div>
+          </div>
+        </div>
+        <div class="feature-container">
+          <ion-icon name="alarm-outline"></ion-icon>
+          <div class="feature-data">
+            <ion-text class="data-title">Periodicidad</ion-text>
+            <div class="data-info-container">
+              <ion-text class="data-information" style="display: inline-block;">3 veces por semana</ion-text>
+            </div>
+          </div>
+        </div>
+        <div class="feature-container">
+          <ion-icon name="list-outline"></ion-icon>
+          <div class="feature-data">
+            <ion-text class="data-title">Tipo</ion-text>
+            <div class="data-info-container">
+              <ion-text class="data-information" style="display: inline-block;">Deporte</ion-text>
+            </div>
+          </div>
+        </div>
+        <div class="feature-container">
+          <ion-icon name="eye-outline"></ion-icon>
+          <div class="feature-data">
+            <ion-text class="data-title">Observaciones</ion-text>
+            <div class="data-info-container">
+              <ion-text class="data-information" style="display: inline-block;">Empezar con periodos mas cortos</ion-text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ion-grid>
+        <ion-row style="display: flex;">
+          <ion-col size="10">
+            <ion-button expand="block" color="success" style="margin-left: 10px; margin-right: 10px;">Solicitar nuevo plan</ion-button>
+          </ion-col>
+          <ion-col size="2" style="align-self: center; display: flex; justify-content: center;">
+            <ion-icon style="color:red; width: 24px; height: 24px; cursor: pointer;" name="trash-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ng-template>
+</ion-modal>

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="toolbar-styles">
+      <a [routerLink]="['/rutina']" style="text-decoration: none;">
+        <ion-icon icon="arrow-back-outline" color="primary" class="back-icon"></ion-icon>
+      </a>
+    </ion-buttons>
+    <ion-title>Tu alimentación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="position: relative;">
+    <ion-card-header>
+      <ion-card-title>
+        Alimentación
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="alimentos-chart-section">
+        <ion-text class="title-chart"></ion-text>
+        <div style="height: 30px;"></div>
+        <canvas #alimentosChart class="alimentos-chart"></canvas>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+         Añade comida
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input placeholder="Título o descripción"></ion-input>
+      <ion-input placeholder="Cantidad en gramos"></ion-input>
+      <div style="display: flex; justify-content:center; padding-top: 20px; margin-bottom: 20px;">
+        <ion-datetime class="date-input"></ion-datetime>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <ion-button color="success">Añadir comida</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

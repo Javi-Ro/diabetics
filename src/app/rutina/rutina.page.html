@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tu rutina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card href="/rutina/alimentacion" style="position: relative; cursor: pointer;">
+    <ion-card-header>
+      <ion-card-title>
+        Alimentación
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="alimentos-chart-section">
+        <ion-text class="title-chart"></ion-text>
+        <div style="height: 30px;"></div>
+        <canvas #alimentosChart class="alimentos-chart"></canvas>
+      </div>
+    </ion-card-content>
+    <ion-icon horizontal="end" style="height: 26px; width: 26px; position: absolute; bottom: 0; right: 0; margin: 5px;" name="chevron-forward-outline"></ion-icon>
+  </ion-card>
+  <ion-card style="position: relative; cursor: pointer;">
+    <ion-card-header>
+      <ion-card-title>
+        Control del ciclo
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Dia fértil
+    </ion-card-content>
+    <ion-icon horizontal="end" style="height: 26px; width: 26px; position: absolute; bottom: 0; right: 0; margin: 5px;" name="chevron-forward-outline"></ion-icon>
+  </ion-card>
+  <ion-card style="position: relative; cursor: pointer;">
+    <ion-card-header>
+      <ion-card-title>
+        Actividad física
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      1532 pasos
+    </ion-card-content>
+    <ion-icon horizontal="end" style="height: 26px; width: 26px; position: absolute; bottom: 0; right: 0; margin: 5px;" name="chevron-forward-outline"></ion-icon>
+  </ion-card>
+  <ion-card style="position: relative; cursor: pointer;">
+    <ion-card-header>
+      <ion-card-title>
+        Sueño
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      7 horas y 12 minutos
+    </ion-card-content>
+    <ion-icon horizontal="end" style="height: 26px; width: 26px; position: absolute; bottom: 0; right: 0; margin: 5px;" name="chevron-forward-outline"></ion-icon>
+  </ion-card>
+  <ion-card style="position: relative; cursor: pointer;">
+    <ion-card-header>
+      <ion-card-title>
+        Estado de ánimo
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    </ion-card-content>
+    <ion-icon horizontal="end" style="height: 26px; width: 26px; position: absolute; bottom: 0; right: 0; margin: 5px;" name="chevron-forward-outline"></ion-icon>
+  </ion-card>
+</ion-content>
