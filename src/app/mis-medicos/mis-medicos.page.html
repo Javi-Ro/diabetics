@@ -12,7 +12,12 @@
 
 <ion-content>
   <ion-list>
-    <a [routerLink]="['/chat']" style="text-decoration: none;">
+    <a [routerLink]="['/chat']" style="text-decoration: none;" *ngIf="!showSearch">
+      <div class="medicos-container" *ngFor="let medico of medicosVisibles">
+        <app-medico-card [info]="medico" [search]="showSearch"></app-medico-card>
+      </div>
+    </a>
+    <a style="text-decoration: none;" *ngIf="showSearch">
       <div class="medicos-container" *ngFor="let medico of medicosVisibles">
         <app-medico-card [info]="medico" [search]="showSearch"></app-medico-card>
       </div>
